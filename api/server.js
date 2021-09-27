@@ -1,3 +1,12 @@
 // BUILD YOUR SERVER HERE
 
-module.exports = {}; // EXPORT YOUR SERVER instead of {}
+//imports
+const express = require('express');
+
+//instance of express app 
+const server = express ()
+
+//global middleware
+server.use(express.json())
+
+module.exports = server; // EXPORT YOUR SERVER instead of {}
